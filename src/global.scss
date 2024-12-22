@@ -34,4 +34,171 @@
 
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
-@import "@ionic/angular/css/palettes/dark.system.css";
+//@import "@ionic/angular/css/palettes/dark.system.css";
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ion-color-primary: #ff4f87; /* Pink primary color */
+    --ion-color-primary-rgb: 255, 79, 135;
+    --ion-color-primary-contrast: #ffffff;
+    --ion-color-primary-contrast-rgb: 255, 255, 255;
+    --ion-color-primary-shade: #e2467b;
+    --ion-color-primary-tint: #ff6a99;
+
+    --ion-color-secondary: #ff6b81; /* Light pink secondary color */
+    --ion-color-secondary-rgb: 255, 107, 129;
+    --ion-color-secondary-contrast: #ffffff;
+    --ion-color-secondary-contrast-rgb: 255, 255, 255;
+    --ion-color-secondary-shade: #e2556d;
+    --ion-color-secondary-tint: #ff80a3;
+
+    --ion-color-tertiary: #ff80bf; /* Soft pink tertiary color */
+    --ion-color-tertiary-rgb: 255, 128, 191;
+    --ion-color-tertiary-contrast: #ffffff;
+    --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+    --ion-color-tertiary-shade: #e073b5;
+    --ion-color-tertiary-tint: #ff94c7;
+
+    --ion-color-success: #ff4ec9; /* Success color in pink */
+    --ion-color-success-rgb: 255, 78, 201;
+    --ion-color-success-contrast: #ffffff;
+    --ion-color-success-contrast-rgb: 255, 255, 255;
+    --ion-color-success-shade: #e246b6;
+    --ion-color-success-tint: #ff69d7;
+
+    --ion-color-warning: #ffb6c1; /* Light warning in pink */
+    --ion-color-warning-rgb: 255, 182, 193;
+    --ion-color-warning-contrast: #000;
+    --ion-color-warning-contrast-rgb: 0, 0, 0;
+    --ion-color-warning-shade: #e5a1b2;
+    --ion-color-warning-tint: #ffbcd9;
+
+    --ion-color-danger: #ff4d7f; /* Danger color in pink */
+    --ion-color-danger-rgb: 255, 77, 127;
+    --ion-color-danger-contrast: #ffffff;
+    --ion-color-danger-contrast-rgb: 255, 255, 255;
+    --ion-color-danger-shade: #e24d73;
+    --ion-color-danger-tint: #ff5a8c;
+
+    --ion-color-light: #f2b0d7; /* Light background with pink tint */
+    --ion-color-light-rgb: 242, 176, 215;
+    --ion-color-light-contrast: #000;
+    --ion-color-light-contrast-rgb: 0, 0, 0;
+    --ion-color-light-shade: #e0a3c2;
+    --ion-color-light-tint: #f2c3d4;
+
+    --ion-color-medium: #ff91b3; /* Medium color in pink */
+    --ion-color-medium-rgb: 255, 145, 179;
+    --ion-color-medium-contrast: #000;
+    --ion-color-medium-contrast-rgb: 0, 0, 0;
+    --ion-color-medium-shade: #e680a2;
+    --ion-color-medium-tint: #ff9db8;
+
+    --ion-color-dark: #e5004f; /* Dark pink background */
+    --ion-color-dark-rgb: 229, 0, 79;
+    --ion-color-dark-contrast: #ffffff;
+    --ion-color-dark-contrast-rgb: 255, 255, 255;
+    --ion-color-dark-shade: #cc0043;
+    --ion-color-dark-tint: #f9005c;
+
+    --ion-text-color: #ffffff; /* White text color for contrast */
+    --ion-text-color-rgb: 255, 255, 255;
+
+    --ion-item-background: #1c1c1e; /* Dark background for items */
+    --ion-card-background: #2c2c2e; /* Slightly lighter background for cards */
+  }
+
+  :root.ios {
+    --ion-background-color: #121212;
+    --ion-background-color-rgb: 18, 18, 18;
+    --ion-background-color-step-50: #1e1e1e;
+    --ion-background-color-step-100: #2a2a2a;
+    --ion-background-color-step-150: #363636;
+    --ion-background-color-step-200: #414141;
+    --ion-background-color-step-250: #4d4d4d;
+    --ion-background-color-step-300: #595959;
+    --ion-background-color-step-350: #656565;
+    --ion-background-color-step-400: #717171;
+    --ion-background-color-step-450: #7d7d7d;
+    --ion-background-color-step-500: #898989;
+    --ion-background-color-step-550: #949494;
+    --ion-background-color-step-600: #a0a0a0;
+    --ion-background-color-step-650: #acacac;
+    --ion-background-color-step-700: #b8b8b8;
+    --ion-background-color-step-750: #c4c4c4;
+    --ion-background-color-step-800: #d0d0d0;
+    --ion-background-color-step-850: #dbdbdb;
+    --ion-background-color-step-900: #e7e7e7;
+    --ion-background-color-step-950: #f3f3f3;
+    --ion-text-color-step-50: #f3f3f3;
+    --ion-text-color-step-100: #e7e7e7;
+    --ion-text-color-step-150: #dbdbdb;
+    --ion-text-color-step-200: #d0d0d0;
+    --ion-text-color-step-250: #c4c4c4;
+    --ion-text-color-step-300: #b8b8b8;
+    --ion-text-color-step-350: #acacac;
+    --ion-text-color-step-400: #a0a0a0;
+    --ion-text-color-step-450: #949494;
+    --ion-text-color-step-500: #898989;
+    --ion-text-color-step-550: #7d7d7d;
+    --ion-text-color-step-600: #717171;
+    --ion-text-color-step-650: #656565;
+    --ion-text-color-step-700: #595959;
+    --ion-text-color-step-750: #4d4d4d;
+    --ion-text-color-step-800: #414141;
+    --ion-text-color-step-850: #363636;
+    --ion-text-color-step-900: #2a2a2a;
+    --ion-text-color-step-950: #1e1e1e;
+    --ion-item-background: #1e1e1e;
+    --ion-card-background: #1e1e1e;
+  }
+
+  :root.md {
+    --ion-background-color: #f1c6d8; /* Light, soft pink background */
+    --ion-background-color-rgb: 241, 198, 216;
+    --ion-text-color: #ffffff; /* White text */
+    --ion-text-color-rgb: 255, 255, 255;
+
+    --ion-background-color-step-50: #ffccd9; /* Very light pink */
+    --ion-background-color-step-100: #f1a3b8; /* Soft pastel pink */
+    --ion-background-color-step-150: #e98097; /* Cool pink */
+    --ion-background-color-step-200: #e35f76; /* Pink with more red */
+    --ion-background-color-step-250: #de4665; /* Stronger pink */
+    --ion-background-color-step-300: #d73454; /* Vivid pink */
+    --ion-background-color-step-350: #d02a43; /* Rich pink */
+    --ion-background-color-step-400: #c72032; /* Deep pink */
+    --ion-background-color-step-450: #c11621; /* Very deep pink */
+    --ion-background-color-step-500: #b70c10; /* Intense pink */
+    --ion-background-color-step-550: #b0030f; /* Dark, rich pink */
+    --ion-background-color-step-600: #a5020e; /* Darker cool pink */
+    --ion-background-color-step-650: #9a010d; /* Strong deep pink */
+    --ion-background-color-step-700: #8f000c; /* Dark pink */
+    --ion-background-color-step-750: #85000b; /* Darker and deeper pink */
+    --ion-background-color-step-800: #7a000a; /* Almost red pink */
+    --ion-background-color-step-850: #700009; /* Very dark pink */
+    --ion-background-color-step-900: #660008; /* Deep red-pink */
+    --ion-background-color-step-950: #5c0007; /* Deepest pink */
+
+    --ion-text-color-step-50: #ffb6cc;
+    --ion-text-color-step-100: #ff99b3;
+    --ion-text-color-step-150: #eee1e4;
+    --ion-text-color-step-200: #ff6699;
+    --ion-text-color-step-250: #ff4d88;
+    --ion-text-color-step-300: #ff3377;
+    --ion-text-color-step-350: #ff1a66;
+    --ion-text-color-step-400: #ff004d;
+    --ion-text-color-step-450: #e60044;
+    --ion-text-color-step-500: #cc003b;
+    --ion-text-color-step-550: #b30032;
+    --ion-text-color-step-600: #990029;
+    --ion-text-color-step-650: #80001f;
+    --ion-text-color-step-700: #660015;
+    --ion-text-color-step-750: #4d000c;
+    --ion-text-color-step-800: #330003;
+    --ion-text-color-step-850: #1a0000;
+    --ion-text-color-step-900: #000000;
+    --ion-text-color-step-950: #000000;
+
+    --ion-item-background: #f1a3b8; /* Soft pink for item background */
+    --ion-card-background: #e98097; /* Cool pink for card background */
+  }
+}

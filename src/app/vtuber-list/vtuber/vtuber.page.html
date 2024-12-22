@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/vtuber"></ion-back-button>
+    </ion-buttons>
+    <ion-title *ngIf="vtuber">{{ vtuber.nom }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div *ngIf="!modif">
+    <ion-grid *ngIf="vtuber" class="center-content">
+      <ion-row>
+        <ion-col>
+          <h2><strong>{{ vtuber.nom }}</strong></h2>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <img [src]="vtuber.img_chaine" [alt]="vtuber.nom">
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <strong>Chaîne :</strong>
+          {{ vtuber.chaine }}
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <strong>Description :</strong>
+          <p>{{ vtuber.description }}</p>
+        </ion-col>
+      </ion-row>
+      <ion-row class="button-row">
+        <ion-col>
+          <ion-button (click)="setModif()">Modifier</ion-button>
+          <ion-button (click)="onDelete(vtuber.id)">
+            <ion-icon name="trash"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div *ngIf="modif">
+    <ion-item>
+      <ion-input type="text" label="Nom" [(ngModel)]="vtuber.nom"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" label="Chaîne" [(ngModel)]="vtuber.chaine"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" label="Image de la chaîne" [(ngModel)]="vtuber.img_chaine"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-textarea label="Description" [(ngModel)]="vtuber.description"></ion-textarea>
+    </ion-item>
+    <p class="text-center">
+      <ion-button (click)="onModif()">Enregistrer</ion-button>
+    </p>
+  </div>
+</ion-content>

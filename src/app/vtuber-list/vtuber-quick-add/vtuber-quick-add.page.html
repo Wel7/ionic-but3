@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/vtuber"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ajout rapide</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let channel of vtuberChannels" (click)="addVtuber(channel)">
+      <ion-thumbnail slot="start">
+        <img [src]="channel.photo" alt="Image" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ channel.name }}</h2>
+        <p>{{ channel.group }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="loadVtuberChannels($event)" *ngIf="hasMore">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more channels...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

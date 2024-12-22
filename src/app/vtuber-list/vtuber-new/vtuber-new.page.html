@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/vtuber"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Nouveau VTuber</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Nom</ion-label>
+      <ion-input [(ngModel)]="vtuber.nom"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Chaîne</ion-label>
+      <ion-input [(ngModel)]="vtuber.chaine"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Image de la chaîne</ion-label>
+      <ion-input [(ngModel)]="vtuber.img_chaine"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Description</ion-label>
+      <ion-textarea [(ngModel)]="vtuber.description"></ion-textarea>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="add()">Enregistrer</ion-button>
+</ion-content>

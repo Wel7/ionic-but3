@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ma bibliothèque de VTubers</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="center-content">
+  <h2>Création d'un nouveau VTuber</h2>
+  <ion-button routerLink="/vtuber/new">Création</ion-button>
+  <ion-button routerLink="/vtuber/quick-add">Ajout rapide</ion-button>
+  <h2>Liste des VTubers</h2>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4" *ngFor="let vtuber of vtubers">
+        <ion-card [routerLink]="['/vtuber', vtuber.id]">
+          <img [src]="vtuber.img_chaine" [alt]="vtuber.nom" loading="lazy">
+          <ion-card-content>
+            <ion-card-title>{{ vtuber.nom }}</ion-card-title>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer class="center-content">
+  <p>🦶🦶</p>
+</ion-footer>
